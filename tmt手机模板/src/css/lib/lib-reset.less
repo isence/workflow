@@ -1,0 +1,162 @@
+@charset "UTF-8";
+blockquote,
+body,
+dd,
+div,
+dl,
+dt,
+fieldset,
+form,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+html,
+input,
+lable,
+legend,
+li,
+ol,
+p,
+select,
+td,
+textarea,
+th,
+ul {
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: 'Microsoft Yahei';
+    font-size: 12px;
+    line-height: 20px;
+    color: #666;
+    overflow-x: hidden;
+}
+body.bg_white {
+    background: #fff;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: 400;
+}
+table {
+    width: 100%;
+    margin: 0 auto;
+    border-spacing: 0;
+}
+address,
+caption,
+cite,
+code,
+dfn,
+em,
+i,
+th,
+var {
+    font-weight: 400;
+    font-style: normal;
+}
+small {
+    font-size: 12px;
+}
+li,
+ol,
+ul {
+    list-style: none;
+}
+form {
+    display: inline;
+}
+code,
+kbd,
+pre,
+samp {
+    font-family: courier new, courier, monospace;
+}
+fieldset,
+img {
+    border: 0;
+}
+img {
+    vertical-align: middle;
+    -ms-interpolation-mode: bicubic;
+    border: 0;
+}
+textarea {
+    resize: none;
+}
+button,
+input,
+select,
+textarea {
+    font-family: 'Microsoft Yahei';
+    font-size: 12px;
+    vertical-align: middle;
+    color: #000;
+    outline: 0;
+}
+a {
+    display: inline-block;
+    text-decoration: none;
+}
+article,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+    clear: all;
+}
+/*隐藏或溢出*/
+.hidden {
+    overflow: hidden;
+}
+.none {
+    display: none;
+}
+/* 区块隐藏 */
+.block {
+    display: block;
+}
+/* 区块显示 */
+.block-inline {
+    display: inline-block;
+}
+/*按钮*/
+.icon {
+    display: inline-block;
+}
+// Clearfix
+// -------------------------
+.clearfix() {
+    zoom: 1;
+    &:before {
+        content: '';
+        display: block;
+    }
+    &:after {
+        content: '';
+        display: table;
+        clear: both;
+    }
+}
+.clearfix {
+    .clearfix();
+}
+.line-overflow(@line) {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: @line;
+    /* number of lines to show */
+    -webkit-box-orient: vertical;
+}

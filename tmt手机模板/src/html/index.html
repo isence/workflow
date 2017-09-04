@@ -1,0 +1,73 @@
+<!DOCTYPE HTML>
+<html lang="zh-CN" data-rem="375">
+
+<head>
+    <meta charset="UTF-8">
+    <title>mod-item-list</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximumscale=1.0,minimum-scale=1.0, user-scalable=0;" />
+    <meta name="keywords" content="" />
+    <meta name="description" content="" />
+    <meta name="apple-mobile-web-app-capable" content="no" />
+    <meta name="format-detection" content="telephone=no">
+    <link rel="stylesheet" type="text/css" href="../css/style-index.css" /> </head>
+
+<body>
+    <div class="mod-item-list">
+        <ul>
+            <li>
+                <p class="pic"><img src="../img/pic.png" alt=""></p>
+                <p class="tit">荣耀 畅玩6X 4GB 32GB畅玩6X 4GB 32GB</p>
+                <p class="price">￥1299.00</p>
+                <p class="statu"><span>自营</span>27万+条评论 好评98</p>
+            </li>
+            <li>
+                <p class="pic"><img src="../img/pic.png" alt=""></p>
+                <p class="tit">荣耀 畅玩6X 4GB 32GB畅玩6X 4GB 32GB</p>
+                <p class="price">￥1299.00</p>
+                <p class="statu"><span>自营</span>27万+条评论 好评98</p>
+            </li>
+            <li>
+                <p class="pic"><img src="../img/pic.png" alt=""></p>
+                <p class="tit">荣耀 畅玩6X 4GB 32GB畅玩6X 4GB 32GB</p>
+                <p class="price">￥1299.00</p>
+                <p class="statu"><span>自营</span>27万+条评论 好评98</p>
+            </li>
+            <li>
+                <p class="pic"><img src="../img/pic.png" alt=""></p>
+                <p class="tit">荣耀 畅玩6X 4GB 32GB畅玩6X 4GB 32GB</p>
+                <p class="price">￥1299.00</p>
+                <p class="statu"><span>自营</span>27万+条评论 好评98</p>
+            </li>
+            <li>
+                <p class="pic"><img src="../img/pic.png" alt=""></p>
+                <p class="tit">荣耀 畅玩6X 4GB 32GB畅玩6X 4GB 32GB</p>
+                <p class="price">￥1299.00</p>
+                <p class="statu"><span>自营</span>27万+条评论 好评98</p>
+            </li>
+            <li>
+                <p class="pic"><img src="../img/pic.png" alt=""></p>
+                <p class="tit">荣耀 畅玩6X 4GB 32GB畅玩6X 4GB 32GB</p>
+                <p class="price">￥1299.00</p>
+                <p class="statu"><span>自营</span>27万+条评论 好评98</p>
+            </li>
+        </ul>
+    </div>
+    <script type="text/javascript" src="../js/jquery.min.js"></script>
+    <script>
+        $(window).scroll(function() {
+            // 当滚动到最底部以上100像素时， 加载新内容
+            // 核心代码
+            if ($(document).height() - $(this).scrollTop() - $(this).height() < 100) {
+                loadData()
+            }
+        });
+
+        function loadData() {
+            $('.mod-item-list ul').append(
+                '<li> <p class="pic"><img src="../img/pic.png" alt=""></p> <p class="tit">荣耀 畅玩6X 4GB 32GB畅玩6X 4GB 32GB</p> <p class="price">￥1299.00</p> <p class="statu"><span>自营</span>27万+条评论 好评98</p> </li> <li> <p class="pic"><img src="../img/pic.png" alt=""></p> <p class="tit">荣耀 畅玩6X 4GB 32GB畅玩6X 4GB 32GB</p> <p class="price">￥1299.00</p> <p class="statu"><span>自营</span>27万+条评论 好评98</p> </li>'
+            );
+        }
+    </script>
+</body>
+
+</html>
