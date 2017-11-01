@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>外卖列表</title>
+    <%- include tpl/_header.ejs %>
+</head>
+
+<body class="bg_grey">
+    <ul class="menu">
+        <li class="cur"><a href="外卖列表.html">外卖菜单</a></li>
+        <li><a href="堂食列表.html">堂食菜单</a></li>
+        <li><a href="我的外卖.html">我的外卖</a></li>
+        <li><a href="我的外卖.html">系统公告</a></li>
+    </ul>
+    <ul class="item_list">
+        <li>
+            <div class="item_list_l"><img src="../img/item1.png" alt=""></div>
+            <div class="item_list_r">
+                <p class="item_list_hd">什锦水果沙拉<span class="cold"><img src="../img/cold.png" alt="">凉菜</span></p>
+                <div class="item_list_bd">评分
+                    <p class="item_score"><img src="../img/good.png" alt=""><img src="../img/good.png" alt=""><img src="../img/good.png" alt=""><img src="../img/good.png" alt=""><img src="../img/bad.png" alt=""></p><span>月售<b>132</b>份</span></div>
+                <p class="item_list_ft">￥21</p>
+                <p class="item_change"><a href="###" class="item_list_add"><img src="../img/add.png" alt=""></a></p>
+            </div>
+        </li>
+        <li>
+            <div class="item_list_l"><img src="../img/item2.png" alt=""></div>
+            <div class="item_list_r">
+                <p class="item_list_hd">什锦水果沙拉<span class="cold"><img src="../img/cold.png" alt="">凉菜</span></p>
+                <div class="item_list_bd">评分
+                    <p class="item_score"><img src="../img/good.png" alt=""><img src="../img/good.png" alt=""><img src="../img/good.png" alt=""><img src="../img/good.png" alt=""><img src="../img/bad.png" alt=""></p><span>月售<b>132</b>份</span></div>
+                <p class="item_list_ft">￥21</p>
+                <p class="item_change"><a href="###" class="item_list_add"><img src="../img/add.png" alt=""></a></p>
+            </div>
+        </li>
+        <li>
+            <div class="item_list_l"><img src="../img/item3.png" alt=""></div>
+            <div class="item_list_r">
+                <p class="item_list_hd">什锦水果沙拉<span class="hot"><img src="../img/hot.png" alt="">热菜</span></p>
+                <div class="item_list_bd">评分
+                    <p class="item_score"><img src="../img/good.png" alt=""><img src="../img/good.png" alt=""><img src="../img/good.png" alt=""><img src="../img/good.png" alt=""><img src="../img/bad.png" alt=""></p><span>月售<b>132</b>份</span></div>
+                <p class="item_list_ft">￥21</p>
+                <p class="item_change"><a href="###" class="item_list_add"><img src="../img/add.png" alt=""></a></p>
+            </div>
+        </li>
+        <li>
+            <div class="item_list_l"><img src="../img/item4.png" alt=""></div>
+            <div class="item_list_r">
+                <p class="item_list_hd">什锦水果沙拉<span class="cold"><img src="../img/cold.png" alt="">凉菜</span></p>
+                <div class="item_list_bd">评分
+                    <p class="item_score"><img src="../img/good.png" alt=""><img src="../img/good.png" alt=""><img src="../img/good.png" alt=""><img src="../img/good.png" alt=""><img src="../img/bad.png" alt=""></p><span>月售<b>132</b>份</span></div>
+                <p class="item_list_ft">￥21</p>
+                <p class="item_change"><a href="###" class="item_list_add"><img src="../img/add.png" alt=""></a></p>
+            </div>
+        </li>
+        <li>
+            <div class="item_list_l"><img src="../img/item5.png" alt=""></div>
+            <div class="item_list_r">
+                <p class="item_list_hd">什锦水果沙拉<span class="cold"><img src="../img/cold.png" alt="">凉菜</span></p>
+                <div class="item_list_bd">评分
+                    <p class="item_score"><img src="../img/good.png" alt=""><img src="../img/good.png" alt=""><img src="../img/good.png" alt=""><img src="../img/good.png" alt=""><img src="../img/bad.png" alt=""></p><span>月售<b>132</b>份</span></div>
+                <p class="item_list_ft">￥21</p>
+                <p class="item_change"><a href="###" class="item_list_add"><img src="../img/add.png" alt=""></a></p>
+            </div>
+        </li>
+        <li>
+            <div class="item_list_l"><img src="../img/item1.png" alt=""></div>
+            <div class="item_list_r">
+                <p class="item_list_hd">什锦水果沙拉<span class="hot"><img src="../img/hot.png" alt="">热菜</span></p>
+                <div class="item_list_bd">评分
+                    <p class="item_score"><img src="../img/good.png" alt=""><img src="../img/good.png" alt=""><img src="../img/good.png" alt=""><img src="../img/good.png" alt=""><img src="../img/bad.png" alt=""></p><span>月售<b>132</b>份</span></div>
+                <p class="item_list_ft">￥21</p>
+                <p class="item_change"><a href="###" class="item_list_add"><img src="../img/add.png" alt=""></a></p>
+            </div>
+        </li>
+    </ul>
+    <%- include tpl/_importjs.ejs %>
+        <script src="../js/index.js"></script>
+        <script type="text/javascript">
+            $('.item_list').on('click', 'li', function(event) {
+                event.preventDefault();
+                location.href = '外卖详情.html';
+            });
+        </script>
+</body>
+
+</html>

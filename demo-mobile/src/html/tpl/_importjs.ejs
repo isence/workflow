@@ -1,0 +1,13 @@
+<!-- js path -->
+<% jsPath = "../"%>
+    <!--loading global-->
+    <script src="<%=jsPath%>js/lib/init.js"></script>
+    <!--loading lib-->
+    <script src="<%=jsPath%>js/lib/jquery-2.1.4.js"></script>
+    <!--<script src="js/lib/zepto.js"></script>-->
+    <script src="<%=jsPath%>js/lib/fastclick.js"></script>
+    <script>
+        $(function() {
+            FastClick.attach(document.body);
+        });
+    </script>

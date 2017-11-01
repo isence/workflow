@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>登录</title>
+    <%- include tpl/_header.ejs %>
+</head>
+
+<body class="bg_grey">
+    <div class="mod_manage">
+        <div class="mod_manage_ft">
+            <div class="mod_manage_ft_l">
+                <ul class="js_tab">
+                    <li class="cur"><a href="###"><i class="iconfont">&#xe628;</i>用户管理</a></li>
+                    <li><a href="###"><i class="iconfont">&#xe603;</i>告警管理</a></li>
+                    <li><a href="###"><i class="iconfont">&#xe640;</i>日志列表</a></li>
+                </ul>
+            </div>
+            <div class="mod_manage_ft_r">
+                <div class="mod_main">
+                    <div class="mod_main_hd"><img src="../img/tit.png" alt="">用户管理<a href="###" class="btn btn_grey"><i class="iconfont">&#xe974;</i>新增</a></div>
+                    <div class="mod_main_bd">
+                        <table class="basic_table">
+                            <tr>
+                                <th>序号</th>
+                                <th>登录名</th>
+                                <th>类型</th>
+                                <th width="300">操作</th>
+                            </tr>
+                            <tr>
+                                <td>0</td>
+                                <td>admin</td>
+                                <td>超级管理员</td>
+                                <td><a href="###">修改密码</a><a href="###">修改</a><a href="###">删除</a></td>
+                            </tr>
+                            <tr>
+                                <td>1</td>
+                                <td>test</td>
+                                <td>普通用户</td>
+                                <td><a href="###">修改密码</a><a href="###">修改</a><a href="###">删除</a></td>
+                            </tr>
+                        </table>
+                    </div>
+                    <div class="mod_main_ft">总记录数：100页 / 每页10条
+                        <ul class="mod_page js_tab">
+                            <li><a href="###">&lt;</a></li>
+                            <li class="cur"><a href="###">1</a></li>
+                            <li><a href="###">2</a></li>
+                            <li><a href="###">3</a></li>
+                            <li><a href="###">4</a></li>
+                            <li><a href="###">5</a></li>
+                            <p><span>...</span></p>
+                            <li><a href="###">&gt;</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <%- include tpl/_importjs.ejs %>
+        <script src="../js/index.js"></script>
+</body>
+
+</html>

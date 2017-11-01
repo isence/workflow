@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>我的外卖</title>
+    <%- include tpl/_header.ejs %>
+</head>
+
+<body class="bg_grey">
+    <ul class="menu">
+        <li><a href="外卖列表.html">外卖菜单</a></li>
+        <li><a href="堂食列表.html">堂食菜单</a></li>
+        <li class="cur"><a href="我的外卖.html">我的外卖</a></li>
+        <li><a href="我的外卖.html">系统公告</a></li>
+    </ul>
+    <div class="order_total">
+        <ul class="order_list order_now">
+            <li class="order_num">订单号 62545678998765 </li>
+            <li>什锦水果沙拉<img src="../img/delete.png" class="delete" alt=""><span class="col_red price">¥21</span>
+                <p class="item_change"><a href="###" class="item_list_reduce"><img src="../img/reduce.png" alt=""></a><span>1</span><a href="###" class="item_list_add"><img src="../img/add.png" alt=""></a></p>
+            </li>
+            <li>什锦水果沙拉<img src="../img/delete.png" class="delete" alt=""><span class="col_red price">¥21</span>
+                <p class="item_change"><a href="###" class="item_list_reduce"><img src="../img/reduce.png" alt=""></a><span>1</span><a href="###" class="item_list_add"><img src="../img/add.png" alt=""></a></p>
+            </li>
+            <li class="total">合计<b>（不含配送费）</b><span class="col_red price">¥39</span><a href="确认收货地址.html" class="btn btn_mini">去结算</a></li>
+        </ul>
+        <p class="tit">历史订单</p>
+        <ul class="order_list order_history">
+            <li class="order_num">订单号 62545678998765 <span>已送达</span></li>
+            <li>什锦水果沙拉<span class="price">¥21<b>x1</b></span></li>
+            <li>什锦水果沙拉<span class="price">¥21<b>x1</b></span></li>
+            <li><i class="time">2017-09-26 16:44</i><span class="price">实付 ¥39 <a href="提交评价.html" class="btn btn_mini">去评价</a></span></li>
+        </ul>
+        <ul class="order_list order_history">
+            <li class="order_num">订单号 62545678998765 <span>已送达</span></li>
+            <li>什锦水果沙拉<span class="price">¥21<b>x1</b></span></li>
+            <li>什锦水果沙拉<span class="price">¥21<b>x1</b></span></li>
+            <li><i class="time">2017-09-26 16:44</i><span class="price">实付 ¥39 <a href="###" class="btn btn_mini">查看评价</a></span></li>
+        </ul>
+    </div>
+    <%- include tpl/_importjs.ejs %>
+        <script src="../js/index.js"></script>
+</body>
+
+</html>

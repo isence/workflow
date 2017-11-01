@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>确认收货地址</title>
+    <%- include tpl/_header.ejs %>
+</head>
+
+<body class="bg_grey">
+    <div class="position"><img src="../img/position.png" alt="">
+        <p class="posi_hd">广州市天河区龙威广场b座7楼</p>
+        <p class="posi_bd">张大大（先生）18820263594</p> <img src="../img/draw.png" alt="" class="draw"> </div>
+    <p class="tit">订单详情</p>
+    <ul class="order_list">
+        <li>什锦水果沙拉<span class="price">¥21</span></li>
+        <li>什锦水果沙拉<span class="price">¥21</span></li>
+        <li>合计<span class="col_red price">¥39</span></li>
+    </ul>
+    <p class="tit">填写备注</p>
+    <ul class="white_comment">
+        <li>
+            <div class="white_comment_bd"><textarea name="name" placeholder="可在此处填写您的口味偏好及特殊要求"></textarea></div>
+        </li>
+    </ul>
+    <div class="btn_group"> <a href="" class="btn btn_orange">提交订单</a> </div>
+    <%- include tpl/_importjs.ejs %>
+        <script src="../js/index.js"></script>
+</body>
+
+</html>

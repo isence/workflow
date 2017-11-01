@@ -1,0 +1,315 @@
+/*管理页面*/
+.mod_login {
+    background: url("../img/bg.png") no-repeat 100%;
+    background-size: cover;
+    position: absolute;
+    width: 100%;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    color: #fff;
+}
+.mod_login_hd {
+    margin: 60px 0 0 100px;
+    font-size: 26px;
+    img {
+        margin-right: 10px;
+    }
+}
+.mod_login_bd {
+    position: absolute;
+    background: #fff;
+    width: 420px;
+    left: 50%;
+    margin-left: -210px;
+    color: #333;
+    height: 340px;
+    top: 50%;
+    border-radius: 4px;
+    margin-top: -170px;
+    h1 {
+        display: block;
+        font-size: 20px;
+        text-align: center;
+        margin: 40px 0;
+    }
+    label {
+        position: relative;
+        display: block;
+        text-align: center;
+        i {
+            position: absolute;
+            top: 10px;
+            left: 75px;
+            color: #317eeb;
+            font-size: 18px;
+        }
+        span {
+            position: absolute;
+            top: 43px;
+            left: 105px;
+            color: red;
+            font-size: 12px;
+            display: none;
+        }
+    }
+    label.error {
+        input {
+            border-color: #ff0000;
+            background: #fff2f2;
+        }
+        span {
+            display: block;
+        }
+    }
+    input {
+        display: inline-block;
+        width: 300px;
+        height: 40px;
+        line-height: 40px;
+        font-size: 14px;
+        color: #666;
+        margin-bottom: 20px;
+        border: 1px solid #ddd;
+        box-sizing: border-box;
+        padding-left: 43px;
+    }
+    a {
+        width: 300px;
+        margin-left: 60px;
+        margin-top: 20px;
+        height: 40px;
+        line-height: 40px;
+    }
+}
+.mod_manage {
+    iframe {
+        width: 100%;
+        position: absolute;
+        top: 98px;
+        border: none;
+        bottom: 0;
+        min-height: 500px;
+    }
+}
+.mod_manage_hd {
+    position: relative;
+    color: #666;
+    padding: 0 20px;
+    height: 28px;
+    line-height: 28px;
+    font-size: 12px;
+    span {
+        position: absolute;
+        right: 20px;
+        b {
+            color: @blue;
+        }
+        a {
+            color: #666;
+        }
+    }
+}
+.mod_manage_bd {
+    position: relative;
+    background: @blue;
+    color: #fff;
+    padding: 0 20px;
+    height: 70px;
+    line-height: 70px;
+    font-size: 20px;
+    img {
+        display: inline-block;
+        width: 40px;
+        margin-right: 10px;
+    }
+    ul {
+        position: absolute;
+        right: 20px;
+        top: 0;
+        line-height: 22px;
+        li {
+            cursor: pointer;
+            float: left;
+            text-align: center;
+            width: 100px;
+            height: 50px;
+            padding: 10px 0;
+            a {
+                color: #fff;
+                font-size: 13px;
+            }
+            i {
+                font-size: 28px;
+            }
+        }
+        li.cur {
+            background: #fff;
+            a {
+                color: @blue;
+            }
+            i {
+                color: @blue;
+            }
+        }
+    }
+}
+.mod_manage_ft_l {
+    position: fixed;
+    background: #232d3d;
+    width: 200px;
+    bottom: 0;
+    top: 0;
+    ul {
+        li {
+            cursor: pointer;
+            padding: 0 0 0 20px;
+            height: 50px;
+            line-height: 50px;
+            a {
+                color: #fff;
+                font-size: 14px;
+            }
+            i {
+                margin-right: 10px;
+                font-size: 18px;
+            }
+        }
+        li.cur {
+            background: #000;
+            a {
+                color: @blue;
+            }
+            i {
+                color: @blue;
+            }
+        }
+    }
+}
+.mod_manage_ft_r {
+    margin: 20px 20px 20px 220px;
+    background: #fff;
+    padding: 0 20px;
+}
+.mod_main_hd {
+    position: relative;
+    border-bottom: 2px solid #ddd;
+    height: 50px;
+    line-height: 50px;
+    font-size: 18px;
+    img {
+        margin-right: 10px;
+    }
+    a {
+        position: absolute;
+        height: 30px;
+        line-height: 30px;
+        font-size: 13px;
+        color: #333;
+        background: #f5f5f5;
+        border: 1px solid #ddd;
+        padding: 0;
+        width: 80px;
+        right: 0;
+        top: 10px;
+        &:hover {
+            color: #333;
+            background: #f5f5f5;
+            border: 1px solid #ddd;
+        }
+        i {
+            margin-right: 3px;
+            color: #666;
+            position: relative;
+            top: 1px;
+        }
+    }
+}
+.mod_main_bd {
+    padding: 20px 0;
+    table {
+        border-top: 1px solid #ddd;
+        tr {
+            &:nth-child(2n+1) {
+                background: #f6f8fb;
+            }
+        }
+        th {
+            border-bottom: 1px solid #ddd;
+            background: #f5f5f5;
+            font-size: 14px;
+            color: #333;
+            font-weight: normal;
+        }
+        td {
+            border-bottom: 1px solid #ddd;
+            font-size: 13px;
+            color: #666;
+            a {
+                color: #2468b8;
+                margin: 0 10px;
+            }
+        }
+    }
+}
+.mod_main_ft {
+    position: relative;
+    font-size: 13px;
+    color: #666;
+    padding-bottom: 20px;
+}
+.mod_page {
+    position: absolute;
+    zoom: 1;
+    right: 0;
+    top: -2px;
+    &:before {
+        content: '';
+        display: block;
+    }
+    &:after {
+        content: '';
+        display: table;
+        clear: both;
+    }
+    li {
+        float: left;
+        background: #fff;
+        width: 20px;
+        text-align: center;
+        margin: 0 4px;
+        a {
+            color: #666;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            display: inline-block;
+            width: 20px;
+            height: 20px;
+            line-height: 20px;
+        }
+        span {
+            position: relative;
+            bottom: 2px;
+        }
+        &:hover {
+            a {
+                background: #2468b8;
+                color: #fff;
+            }
+        }
+    }
+    p {
+        float: left;
+        background: #fff;
+        width: 20px;
+        text-align: center;
+        margin: 0 2px;
+    }
+    li.cur {
+        a {
+            background: #2468b8;
+            color: #fff;
+        }
+    }
+}
